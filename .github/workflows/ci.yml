@@ -11,9 +11,9 @@ permissions:
   pull-requests: write
 
 on:
+  pull_request_target:
   push:
     branches: [main]
-  pull_request:
     
 jobs:
   linter:
