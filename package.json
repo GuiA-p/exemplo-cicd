@@ -5,9 +5,9 @@
   "license": "MIT",
   "dependencies": {
     "add": "^2.0.6",
-    "next": "^16.1.6",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "next": "14",
+    "react": "18",
+    "react-dom": "18",
     "yarn": "^1.22.22"
   },
   "scripts": {
@@ -15,6 +15,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "devDependencies": {
+    "eslint": "8",
+    "eslint-config-next": "14"
   }
 }
-
