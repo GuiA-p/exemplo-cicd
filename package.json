@@ -14,7 +14,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "deploy:prod": "yarn deploy --prod --token=$VERCEL_TOKEN",
+    "deploy": "yarn build && npx vercel deploy ./build --prod --confirm"
   },
   "devDependencies": {
     "eslint": "8",
