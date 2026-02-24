@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    types: [opened, synchronize]
 
   workflow_dispatch:
 
@@ -15,5 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Run Installation
+        run: yarn install
+
+      - name: Run Linter
+        run: yarn lint
